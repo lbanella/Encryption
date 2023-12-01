@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 class Main {
   public static void main(String[] args) {
+    //SALUTO! 
      ArrayList<Vigenere> quadranti = new ArrayList<Vigenere>();
 
     System.out.println("Cifriamo il nostro testo e trasformiamolo in un testo segreto!");
@@ -18,7 +19,6 @@ class Main {
     Vigenere quadrante_4=new Vigenere(13,26,13,26,s);
     quadranti.add(quadrante_4);
     
-   
     for(Vigenere v:quadranti){
      Thread t= new Thread(v);
      t.start();
